@@ -10,8 +10,8 @@ crash.*.log - Файлы логов с дополнительными имена
 *.tfvars  - Файлы с расширением *.tfvars
 *.tfvars.json - JSON-версии файлов *.tfvars.
 override.tf - Файл override.tf 
-override.tf.json JSON-версии файлов override.tf.
+override.tf.json - JSON-версии файлов override.tf.
 *_override.tf.json  - Файлы, локального переопределения конфигурации *_override.tf.json
-.terraformrc - Файлы с раширением .terraformrc.  (Локальные файлы конфигурации для интерфейса командной строки Terraform.)
-terraform.rc - Файл terraform.rc (Локальные файл конфигурации)
+.terraformrc - Файл .terraformrc  
+terraform.rc - Файл terraform.rc 
 ```
