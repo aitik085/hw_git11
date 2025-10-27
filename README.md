@@ -1,17 +1,44 @@
 # hw_git11
+## .gitignore
 
-### Будут игнорироваться:
-```
-.terraform/ - Файлы которые находятся в директории ./Terraform. 
-*.tfstate - Все файлы с расширением .tfstate
-crash.log - Файл crash.log
-crash.*.log - Файлы логов с дополнительными именами.
-.terraform.tfstate.lock.info - Временный файл .terraform.tfstate.lock.info.
-*.tfvars  - Файлы с расширением *.tfvars
-*.tfvars.json - JSON-версии файлов *.tfvars.
-override.tf - Файл override.tf 
-override.tf.json - JSON-версии файлов override.tf.
-*_override.tf.json  - Файлы, локального переопределения конфигурации *_override.tf.json
-.terraformrc - Файл .terraformrc  
-terraform.rc - Файл terraform.rc 
-```
+#### Игнорировать временные файлы логов с расширением .log   
+*.log 
+
+#### Игнорировать файл myconf
+myconf
+
+#### Игнорировать файлы которые находятся в директории .terraform/
+.terraform/
+
+#### Игнорировать файлы с расширением .tfstate
+*.tfstate
+#### Игнорировать любые файлы у которых имя начинается с .tfstate. и заканчивается любыми символами
+*.tfstate.* 
+
+#### Игнорировать файл crash.log
+crash.log
+
+#### Игнорировать файлы корые начинаются со слова crash., содержат любые символы (*) в середине и заканчиваются расширением .log
+crash.*.log
+
+####  Игнорировать файлы с расширением .tfvars  
+*.tfvars
+####  Игнорировать файлы с расширением .tfvars.json  
+*.tfvars.json
+
+#### Игнорировать файл override.tf
+override.tf
+#### Игнорировать файл override.tf.json
+override.tf.json
+#### Игнорировать файлы у которых имя заканчивается на _override.tf
+*_override.tf 
+#### Игнорировать файлы у которых имя заканчивается на _override.tf.json
+*_override.tf.json
+
+#### Игнорировать файл .terraform.tfstate.lock.info
+.terraform.tfstate.lock.info
+
+#### Игнорировать файл .terraformrc
+.terraformrc
+#### Игнорировать файл terraform.rc
+terraform.rc
