@@ -42,3 +42,5 @@ override.tf.json
 .terraformrc
 #### Игнорировать файл terraform.rc
 terraform.rc
+
+git commit -m "Initial gitlab"
